@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+    height: 100vh;
+    padding: 20px;
+}
+
+header{
+    text-align: center;
+    font-size: 30px;
+    word-spacing: 3px;
+}
+
+.Photo{
+    color: black;
+    font-family: 'Concert One', cursive;
+    
+}
+
+.Gallery{
+    color: forestgreen;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 27px;
+}
+
+main{
+    background-color: brown;
+
+}
+
+.esquerdo{
+    
+}
+
+
+
+footer{
+    background-color: cadetblue;
+}
