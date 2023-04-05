@@ -2,44 +2,129 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border-radius: 15px;
 }
 
 body{
     display: grid;
-    grid-template-rows: 50px 1fr 50px;
+    grid-template-rows: 100px 1fr 60px;
+    margin: 0px 325px 0px 325px;
     height: 100vh;
     padding: 20px;
+    row-gap: 10px;
+    background-image: url(./img/fundo.jpg);
+    background-size: cover;
 }
 
 header{
+    display: grid;
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
     word-spacing: 3px;
 }
 
 .Photo{
-    color: black;
+    color: white;
     font-family: 'Concert One', cursive;
     
 }
 
 .Gallery{
-    color: forestgreen;
+    color: chartreuse;
     font-family: 'Gloria Hallelujah', cursive;
-    font-size: 27px;
+    font-size: 47px;
 }
 
 main{
-    background-color: brown;
-
-}
-
-.esquerdo{
+    display: grid;
+    grid-template-areas: 
+        "esquerdo direito"
+        "esquerdo direito"
+        "baixo baixo";
+    grid-template-rows: 3fr 3fr 2.8fr;
+    grid-template-columns: 8fr 6.5fr;
+    column-gap: 10px;
+    row-gap: 10px;
     
 }
 
+.esquerdo{
+    grid-area: esquerdo;
+    background-color: green;
+}
 
+.direito{
+    display: grid;
+    grid-area: direito;
+    grid-template-areas: 
+        "foto2 foto3"
+        "foto4 foto5";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.foto2{
+    grid-area: foto2;
+    background-color: lime;
+}
+
+.foto3{
+    grid-area: foto3;
+    background-color: maroon;
+}
+
+.foto4{
+    grid-area: foto4;
+    background-color: mediumblue;
+}
+
+.foto5{
+    grid-area: foto5;
+    background-color: orangered;
+}
+
+.baixo{
+    display: grid;
+    grid-area: baixo;
+    grid-template-areas: 
+        "foto6 foto7 foto8";
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+
+.foto6{
+    grid-area: foto6;
+    background-color: yellow;
+}
+
+.foto7{
+    grid-area: foto7;
+    background-color: crimson;
+}
+
+.foto8{
+    grid-area: foto8;
+    background-color: darkblue;
+}
 
 footer{
-    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.ver_mais{
+    background-color: saddlebrown;
+    border-radius: 50px;
+    width: 150px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 1.9em;
+    color: ghostwhite;
+    font-family: 'Delicious Handrawn', cursive;
+}
+
